@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css';
 
-function Header() {
+function Header(props) {
     return (
         <div className='header'>
             <h2>DOtodo</h2>
-            <p>Sign Out</p>      
+            <p onClick={props.togglePopup}>Sign Out</p>      
         </div>
     )
 }
