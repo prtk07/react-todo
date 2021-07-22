@@ -8,7 +8,7 @@ function Login() {
       <div className="login-container">
         <h1>Login</h1>
         <input type="text" name="email" placeholder="Email" />
-        <input type="text" name="password" placeholder="Password" />
+        <input type="password" name="password" placeholder="Password" />
 
         <button className="login-button">
           <span>Login</span>

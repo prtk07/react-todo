@@ -1,4 +1,4 @@
-.login-view {
+.signup-view {
   background-image: linear-gradient(rgb(236, 57, 57), rgb(231, 41, 231));
   height: 90vh;
   display: flex;
@@ -6,36 +6,36 @@
   justify-content: center;
 }
 
-.login-container {
+.signup-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   width: 30%;
-  height: 70%;
+  height: 90%;
   background-color: rgb(243, 237, 230);
   border-radius: 10px;
 }
 
-.login-container > input {
+.signup-container > input {
   width: 90%;
   height: 30px;
 }
 
-.login-container > .login-button {
+.signup-container > .signup-button {
   width: 90%;
   height: 35px;
   background-color: blueviolet;
   border: none;
 }
 
-.login-button span {
+.signup-button span {
   color: antiquewhite;
   font-weight: 500;
   font-size: 1.2rem;
 }
 
-.signup-link {
+.login-link {
   display: flex;
   flex-direction: row;
   font-size: small;

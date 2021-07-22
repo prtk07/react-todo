@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import MainTodo from "./Components/MainTodo";
 import Login from "./Components/Login";
+import Signup from "./Components/Signup";
 
 //TODO add transition smoothness
 //TODO add better styles
@@ -18,7 +19,7 @@ function App() {
         </Route>
 
         <Route path="/register">
-          <div>Register</div>
+          <Signup />
         </Route>
 
         <Route path="/:user">

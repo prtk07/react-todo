@@ -1,6 +1,7 @@
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    border: 1px solid green;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid green;
+  height: 10vh;
 }
