@@ -4,8 +4,7 @@ import "./Header.css";
 function Header(props) {
   return (
     <div className="header">
-      <h2>DOtodo</h2>
-      <p onClick={props.togglePopup}>Sign Out</p>
+      <h1>Todo</h1>
     </div>
   );
 }
