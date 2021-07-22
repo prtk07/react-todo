@@ -1,28 +1,35 @@
-import './App.css';
-import Header from './Components/Header';
-import MainTodo from './Components/MainTodo';
-import SignInPopup from './Components/SignInPopup';
-import {useState} from 'react';
-
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./Components/Header";
+import MainTodo from "./Components/MainTodo";
+import Login from "./Components/Login";
 
 //TODO add transition smoothness
 //TODO add better styles
-//TODO popup window for signin 
-
+//TODO popup window for signin
 
 function App() {
-  let [popup, setPopup] = useState(false);
-
-  function togglePopup(){
-    setPopup(!popup);
-  }
-
   return (
-    <div className="screen">
-      {popup && <SignInPopup close={togglePopup}/>}
-      <Header togglePopup = {togglePopup}/>
-      <MainTodo/>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Login />
+        </Route>
+
+        <Route path="/register">
+          <div>Register</div>
+        </Route>
+
+        <Route path="/:user">
+          <MainTodo />
+        </Route>
+      </Switch>
+    </Router>
+    // <div className="screen">
+    //   <Header togglePopup={togglePopup} />
+    //   <MainTodo />
+    // </div>
   );
 }
 
